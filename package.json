@@ -1,0 +1,31 @@
+{
+  "name": "has-label",
+  "version": "1.0.0",
+  "description": "Check if there are any open PRs with a given label",
+  "main": "lib/main.js",
+  "scripts": {
+    "build": "rm -rf lib dist; tsc",
+    "format": "prettier --write '**/*.ts'",
+    "format-check": "prettier --check '**/*.ts'",
+    "lint": "eslint src/**/*.ts",
+    "package": "ncc build --source-map --license licenses.txt",
+    "all": "npm run build && npm run format && npm run lint && npm run package"
+  },
+  "author": "Vinted B.V.",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^1",
+    "@actions/github": "^5"
+  },
+  "devDependencies": {
+    "@types/node": "^16",
+    "@typescript-eslint/parser": "^5",
+    "@vercel/ncc": "^0",
+    "eslint": "^8",
+    "eslint-plugin-github": "^4",
+    "js-yaml": "^4",
+    "prettier": "2",
+    "typescript": "^4",
+    "npm": "^8"
+  }
+}

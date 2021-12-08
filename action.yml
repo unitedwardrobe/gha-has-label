@@ -1,0 +1,17 @@
+name: 'Your name here'
+description: 'Provide a description here'
+author: 'Your name or organization here'
+inputs:
+  token:
+    description: 'Workflow token'
+    required: true
+    default: ''
+  labels:
+    description: 'Labels to check for, comma-separated'
+    required: true
+outputs:
+  result:
+    description: '"true" if there is a PR with one of the given labels, "false" if not'
+runs:
+  using: 'node12'
+  main: 'dist/index.js'

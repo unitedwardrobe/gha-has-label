@@ -1,0 +1,23 @@
+name: 'test'
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - id: has-label
+        uses: ./
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          labels: deploy,foo,bar
+      - if: ${{ steps.has-label.outputs.result == 'true' }}
+        run: |
+          echo 'true'
+      - if: ${{ steps.has-label.outputs.result == 'false' }}
+        run: |
+          echo 'false'
