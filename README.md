@@ -50,3 +50,7 @@ jobs:
 ```
 
 Created with https://github.com/actions/typescript-action
+
+## Working in this repository
+
+After updating code, run `npm run all` to build the new version.

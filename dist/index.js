@@ -79,7 +79,7 @@ function getLabelNames(pulls) {
     let pulls = yield getPulls();
     // Exclude current pull request if this is a pull request.
     if (currentPull) {
-        pulls = excludePullRequest(pulls, github.context.payload.pull_request.id);
+        pulls = excludePullRequest(pulls, currentPull.id);
     }
     const usedLabelNames = getLabelNames(pulls);
     for (let inputLabelName of inputLabels) {
