@@ -1,0 +1,7 @@
+version: '3'
+tasks:
+  update:
+    desc: Update deps and rebuild package
+    cmds:
+      - npm update
+      - npm run all
