@@ -4,4 +4,9 @@ tasks:
     desc: Update deps and rebuild package
     cmds:
       - npm update
+      - task: build
+
+  build:
+    desc: Build package
+    cmds:
       - npm run all
