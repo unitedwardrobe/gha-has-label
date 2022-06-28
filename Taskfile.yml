@@ -5,6 +5,9 @@ tasks:
     cmds:
       - npm update
       - task: build
+      - git add -A
+      - 'git commit -m "chore: Upgrade deps"'
+      - git push
 
   build:
     desc: Build package
