@@ -1,6 +1,6 @@
-name: 'Your name here'
-description: 'Provide a description here'
-author: 'Your name or organization here'
+name: 'Has label'
+description: 'Checks if the current PR has label X, and outputs true/false, so that actions can be taken'
+author: 'Stephan Grasmeijer'
 inputs:
   token:
     description: 'Workflow token'
