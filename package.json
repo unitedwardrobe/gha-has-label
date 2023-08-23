@@ -18,14 +18,14 @@
     "@actions/github": "^5"
   },
   "devDependencies": {
-    "@types/node": "^18",
-    "@typescript-eslint/parser": "^5",
+    "@types/node": "^20",
+    "@typescript-eslint/parser": "^6",
     "@vercel/ncc": "^0",
     "eslint": "^8",
     "eslint-plugin-github": "^4",
     "js-yaml": "^4",
     "npm": "^9",
-    "prettier": "2",
-    "typescript": "^4"
+    "prettier": "3",
+    "typescript": "^5"
   }
 }
